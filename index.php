@@ -1,6 +1,7 @@
 <?php 
 // ICI LES INCLUDES DE FICHIERS PHP 
-
+include 'includes/fileHandler.php';
+include 'includes/fileList.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +17,15 @@
     <h2>Serveur de Fichiers</h2>
 
     <!-- FORMULAIRE UPLOAD -->
-<form action="" method="POST"></form>
-
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Uploader</button>
+    </form>
 <!-- LISTE DES FICHIERS  -->
 <h2>Fichiers disponibles :</h2>
+<ul>
+    
+</ul>
 
 </body>
 </html>
